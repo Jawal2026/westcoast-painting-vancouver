@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>West Coast Painting Vancouver</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    body { margin:0; font-family:Arial; background:#f4f6f8; }
+    body { margin:0; font-family:Arial; background:#f5f7fa; }
 
     header {
       background:#0f3d5e;
       color:white;
-      padding:20px;
+      padding:15px;
       text-align:center;
     }
 
@@ -23,18 +23,19 @@
     }
 
     .hero {
-      background:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511') center/cover;
+      background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1505691938895-1758d7feb511') center/cover;
       color:white;
       text-align:center;
-      padding:100px 20px;
+      padding:90px 20px;
     }
 
     .btn {
       display:inline-block;
-      margin-top:20px;
-      padding:12px 25px;
-      background:#ffffff;
-      color:#0f3d5e;
+      margin-top:15px;
+      padding:12px 22px;
+      background:#ffcc00;
+      color:#000;
       text-decoration:none;
       font-weight:bold;
       border-radius:6px;
@@ -42,14 +43,14 @@
 
     .section {
       max-width:1000px;
-      margin:40px auto;
+      margin:30px auto;
       background:white;
       padding:20px;
       border-radius:10px;
-      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
     }
 
-    .services {
+    .grid {
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
       gap:15px;
@@ -60,12 +61,7 @@
       padding:15px;
       border-radius:8px;
       text-align:center;
-    }
-
-    .gallery img {
-      width:100%;
-      border-radius:8px;
-      margin-bottom:10px;
+      font-weight:bold;
     }
 
     footer {
@@ -73,7 +69,18 @@
       color:white;
       text-align:center;
       padding:15px;
-      margin-top:40px;
+      margin-top:30px;
+    }
+
+    .call-btn {
+      display:inline-block;
+      background:#28a745;
+      color:white;
+      padding:12px 20px;
+      text-decoration:none;
+      border-radius:6px;
+      font-weight:bold;
+      margin-top:10px;
     }
   </style>
 </head>
@@ -84,7 +91,6 @@
   <h1>West Coast Painting Vancouver</h1>
   <nav>
     <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
     <a href="#reviews">Reviews</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -92,13 +98,14 @@
 
 <section class="hero">
   <h2>Professional Painting Services in Vancouver</h2>
-  <p>Interior & Exterior Painting • Residential & Commercial</p>
+  <p>Fast • Clean • Affordable Interior & Exterior Painting</p>
+
   <a href="#contact" class="btn">Get Free Quote</a>
 </section>
 
 <section id="services" class="section">
   <h2>Our Services</h2>
-  <div class="services">
+  <div class="grid">
     <div class="card">Interior Painting</div>
     <div class="card">Exterior Painting</div>
     <div class="card">Residential Homes</div>
@@ -106,30 +113,19 @@
   </div>
 </section>
 
-<section id="gallery" class="section">
-  <h2>Our Work</h2>
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
-    <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6">
-  </div>
-</section>
-
 <section id="reviews" class="section">
   <h2>Customer Reviews</h2>
-  <p>⭐⭐⭐⭐⭐ “Excellent painting job, very clean and professional!”</p>
-  <p>⭐⭐⭐⭐⭐ “Best painters in Vancouver, highly recommended!”</p>
-
-  <a href="https://www.google.com/search?q=painting+services+vancouver+reviews" target="_blank" class="btn">
-    View More Reviews
-  </a>
+  <p>⭐⭐⭐⭐⭐ “Very professional and clean work!”</p>
+  <p>⭐⭐⭐⭐⭐ “Best painters in Vancouver — highly recommend!”</p>
 </section>
 
 <section id="contact" class="section">
-  <h2>Contact Us</h2>
+  <h2>Get Your Free Quote Today</h2>
+
   <p><strong>Phone:</strong> 778-896-2403</p>
   <p><strong>Email:</strong> westcoastpaintingvancouver@gmail.com</p>
 
-  <a href="tel:7788962403" class="btn">Call Now</a>
+  <a href="tel:7788962403" class="call-btn">📞 Call Now</a>
 </section>
 
 <footer>
