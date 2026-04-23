@@ -1,57 +1,140 @@
-.<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>West Coast Painting Vancouver</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    body { margin:0; font-family:Arial; background:#f4f6f8; }
+
+    header {
+      background:#0f3d5e;
+      color:white;
+      padding:20px;
+      text-align:center;
+    }
+
+    nav a {
+      color:white;
+      margin:0 10px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    .hero {
+      background:url('https://images.unsplash.com/photo-1505691938895-1758d7feb511') center/cover;
+      color:white;
+      text-align:center;
+      padding:100px 20px;
+    }
+
+    .btn {
+      display:inline-block;
+      margin-top:20px;
+      padding:12px 25px;
+      background:#ffffff;
+      color:#0f3d5e;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:6px;
+    }
+
+    .section {
+      max-width:1000px;
+      margin:40px auto;
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .services {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:15px;
+    }
+
+    .card {
+      background:#eaf2f8;
+      padding:15px;
+      border-radius:8px;
+      text-align:center;
+    }
+
+    .gallery img {
+      width:100%;
+      border-radius:8px;
+      margin-bottom:10px;
+    }
+
+    footer {
+      background:#0f3d5e;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:40px;
+    }
+  </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>West Coast Painting Vancouver</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-    </nav>
-  </header>
+<header>
+  <h1>West Coast Painting Vancouver</h1>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <section class="hero">
-    <h2>Vancouver’s Trusted Painting Experts</h2>
-    <p>High-quality Interior & Exterior Painting for Homes & Businesses</p>
+<section class="hero">
+  <h2>Professional Painting Services in Vancouver</h2>
+  <p>Interior & Exterior Painting • Residential & Commercial</p>
+  <a href="#contact" class="btn">Get Free Quote</a>
+</section>
 
-    <a href="#contact" style="display:inline-block;margin-top:20px;padding:12px 25px;background:white;color:#1e6fa8;text-decoration:none;border-radius:6px;font-weight:bold;">
-      Get Free Quote
-    </a>
-  </section>
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">Interior Painting</div>
+    <div class="card">Exterior Painting</div>
+    <div class="card">Residential Homes</div>
+    <div class="card">Commercial Projects</div>
+  </div>
+</section>
 
-  <section class="content">
-    <h3>Welcome</h3>
-    <p>We provide professional painting services across Vancouver and surrounding areas. Clean, reliable, and high-quality work for residential and commercial projects.</p>
-  </section>
+<section id="gallery" class="section">
+  <h2>Our Work</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e">
+    <img src="https://images.unsplash.com/photo-1502005229762-cf1b2da7c5d6">
+  </div>
+</section>
 
-  <section class="content">
-    <h3>Our Services</h3>
-    <ul>
-      <li>Interior Painting</li>
-      <li>Exterior Painting</li>
-      <li>Residential Homes</li>
-      <li>Commercial Buildings</li>
-      <li>Wall Repairs & Prep Work</li>
-    </ul>
-  </section>
+<section id="reviews" class="section">
+  <h2>Customer Reviews</h2>
+  <p>⭐⭐⭐⭐⭐ “Excellent painting job, very clean and professional!”</p>
+  <p>⭐⭐⭐⭐⭐ “Best painters in Vancouver, highly recommended!”</p>
 
-  <section id="contact" class="content">
-    <h3>Get a Free Quote</h3>
-    <p>Call us or send a message for fast painting estimates in Vancouver.</p>
+  <a href="https://www.google.com/search?q=painting+services+vancouver+reviews" target="_blank" class="btn">
+    View More Reviews
+  </a>
+</section>
 
-    <p><strong>Phone:</strong> 778-896-2403</p>
-<p><strong>Email:</strong> westcoastpaintingvancouver@gmail.com</p>
-  </section>
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p><strong>Phone:</strong> 778-896-2403</p>
+  <p><strong>Email:</strong> westcoastpaintingvancouver@gmail.com</p>
 
-  <footer>
-    <p>© 2026 West Coast Painting Vancouver</p>
-  </footer>
+  <a href="tel:7788962403" class="btn">Call Now</a>
+</section>
+
+<footer>
+  <p>© 2026 West Coast Painting Vancouver</p>
+</footer>
 
 </body>
 </html>
