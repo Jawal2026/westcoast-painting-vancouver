@@ -175,12 +175,22 @@
 <script>
 window.onload = function () {
   setTimeout(function () {
-    if (confirm("Happy with our painting service? Please leave us a quick Google review 👍")) {
-      window.open("https://g.page/r/Ce_C3qMRQU2AEBM/review", "_blank");
-    }
-  }, 6000);
+  <script>
+window.onload = function () {
+
+  if (!localStorage.getItem("reviewPopupShown")) {
+
+    setTimeout(function () {
+
+      if (confirm("Happy with our painting service? Please leave a quick Google review 👍")) {
+        window.open("https://g.page/r/Ce_C3qMRQU2AEBM/review", "_blank");
+      }
+
+      localStorage.setItem("reviewPopupShown", "yes");
+
+    }, 6000);
+
+  }
+
 };
 </script>
-
-</body>
-</html>
