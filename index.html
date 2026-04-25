@@ -18,7 +18,6 @@
       color: #333;
     }
 
-    /* HEADER */
     header {
       background: #0f3d5e;
       color: white;
@@ -44,7 +43,6 @@
       font-size: 14px;
     }
 
-    /* HERO */
     .hero {
       background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
       url('https://images.unsplash.com/photo-1501183638710-841dd1904471') center/cover;
@@ -53,14 +51,8 @@
       padding: 120px 20px;
     }
 
-    .hero h1 {
-      font-size: 40px;
-      margin-bottom: 10px;
-    }
-
-    .hero p {
-      font-size: 18px;
-    }
+    .hero h1 { font-size: 40px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; }
 
     .btn {
       display: inline-block;
@@ -73,7 +65,6 @@
       border-radius: 6px;
     }
 
-    /* SECTIONS */
     .section {
       max-width: 1100px;
       margin: auto;
@@ -95,13 +86,15 @@
       border-radius: 10px;
     }
 
-    /* GALLERY */
-    .gallery img {
-      width: 100%;
+    .review-box {
+      max-width: 500px;
+      margin: 15px auto;
+      padding: 15px;
+      border: 1px solid #ddd;
       border-radius: 10px;
+      text-align: center;
     }
 
-    /* CONTACT BOX */
     .contact-box {
       background: #0f3d5e;
       color: white;
@@ -110,37 +103,26 @@
       text-align: center;
     }
 
-    .contact-box a {
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0f3d5e;
       color: white;
-      display: block;
-      margin: 10px 0;
-      text-decoration: none;
+      margin-top: 20px;
     }
 
-    /* FLOATING BUTTONS */
-    .call {
+    .call, .whatsapp {
       position: fixed;
-      bottom: 20px;
       right: 20px;
-      background: #28a745;
-      color: white;
       padding: 14px 18px;
       border-radius: 50px;
+      color: white;
       text-decoration: none;
       font-weight: bold;
     }
 
-    .whatsapp {
-      position: fixed;
-      bottom: 90px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      padding: 14px 18px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    .call { bottom: 20px; background: #28a745; }
+    .whatsapp { bottom: 90px; background: #25D366; }
 
   </style>
 </head>
@@ -150,18 +132,11 @@
 <header>
   <div class="topbar">
     <div class="logo">
-      <img src="logo.png" alt="West Coast Painting Logo" style="height:60px;">
+      <img src="logo.png" style="height:60px;">
       <strong>West Coast Painting</strong>
     </div>
 
     <nav>
-      <a href="#home">Home</a>
-      <a href="#services">Services</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
       <a href="#home">Home</a>
       <a href="#services">Services</a>
       <a href="#projects">Projects</a>
@@ -174,14 +149,12 @@
 <section class="hero" id="home">
   <h1>West Coast Painting Vancouver</h1>
   <p>Interior & Exterior Painting • Clean • Reliable • High Quality</p>
-  <p><strong>Trusted Local Painting Experts • Interior & Exterior Specialists • Serving Vancouver & Surrounding Areas</strong></p>
   <a class="btn" href="#contact">Get Free Estimate</a>
 </section>
 
 <!-- SERVICES -->
 <section class="section" id="services">
   <h2>Our Services</h2>
-
   <div class="grid">
     <div class="card">Interior Painting</div>
     <div class="card">Exterior Painting</div>
@@ -192,96 +165,50 @@
   </div>
 </section>
 
+<!-- ⭐ REVIEWS (NEW SECTION) -->
+<section class="section">
+  <h2>Customer Reviews</h2>
+
+  <div class="review-box">
+    ⭐⭐⭐⭐⭐
+    <p>"Amazing work! Very professional, clean, and on time. Highly recommend."</p>
+    <strong>- Google Customer</strong>
+  </div>
+</section>
+
 <!-- PROJECTS -->
 <section class="section" id="projects">
   <h2>Recent Projects</h2>
-
-  <div class="grid gallery">
-    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
-    <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828">
-    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+  <div class="grid">
+    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" style="width:100%;border-radius:10px;">
+    <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828" style="width:100%;border-radius:10px;">
+    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" style="width:100%;border-radius:10px;">
   </div>
 </section>
 
 <!-- CONTACT -->
 <section class="section" id="contact">
- <!-- CONTACT -->
-<section class="section" id="contact">
-
   <h2>Get Your Free Quote</h2>
 
-  <p>We provide fast, no-obligation painting estimates for homes and businesses in Vancouver.</p>
-
-  <ul>
-    <li>Interior painting (rooms, ceilings, trim)</li>
-    <li>Exterior painting (houses, garages, fences)</li>
-    <li>Small & large projects</li>
-  </ul>
-
-  <p><strong>Every project is different — we give exact pricing after a quick inspection or photos.</strong></p>
-
-  <p><strong>Typical starting ranges:</strong></p>
-
-  <ul>
-    <li>Small room: $300 – $800</li>
-    <li>Full interior home: $2,000+</li>
-    <li>Exterior painting: $2,500+</li>
-  </ul>
-  <p><strong>These are labour-only estimates. Final quotes are confirmed after inspection or photos.</strong></p>
-
-  <hr>
-
-  <h3>Request Your Free Estimate</h3>
-
   <form action="https://formsubmit.co/westcoastpaintingvancouver@gmail.com" method="POST">
-
     <input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:10px;margin:5px 0;">
-
     <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%;padding:10px;margin:5px 0;">
-
-    <input type="email" name="email" placeholder="Email (optional)" style="width:100%;padding:10px;margin:5px 0;">
-
-    <textarea name="message" placeholder="Describe your painting project..." required style="width:100%;padding:10px;margin:5px 0;height:100px;"></textarea>
-
+    <textarea name="message" placeholder="Your project..." required style="width:100%;padding:10px;margin:5px 0;height:100px;"></textarea>
     <button type="submit" class="btn">Get Free Quote</button>
-
   </form>
 
-</section>
-</ul>
-
   <div class="contact-box">
-    <p><strong>Call:</strong> 778-896-2403</p>
-    <p><strong>Email:</strong> westcoastpaintingvancouver@gmail.com</p>
-
-    <a href="https://g.page/r/Ce_C3qMRQU2AEBM/review" target="_blank">
-      ⭐ Leave a Google Review
-    </a>
+    <p>778-896-2403</p>
+    <p>westcoastpaintingvancouver@gmail.com</p>
   </div>
 </section>
 
-<!-- FOOTER -->
-<section class="section" style="text-align:center;">
-  <p>© 2026 West Coast Painting Vancouver</p>
-</section>
+<footer>
+  © 2026 West Coast Painting Vancouver
+</footer>
 
-<!-- FLOATING BUTTONS -->
-<a class="call" href="tel:7788962403">📞 Call Now</a>
-<a class="whatsapp" href="https://wa.me/17788962403" target="_blank">💬 WhatsApp</a>
-
-<!-- REVIEW POPUP -->
-<script>
-window.onload = function () {
-  if (!localStorage.getItem("reviewPopupShown")) {
-    setTimeout(function () {
-      if (confirm("Happy with our painting service? Please leave a quick Google review 👍")) {
-        window.open("https://g.page/r/Ce_C3qMRQU2AEBM/review", "_blank");
-      }
-      localStorage.setItem("reviewPopupShown", "yes");
-    }, 6000);
-  }
-};
-</script>
+<a class="call" href="tel:7788962403">📞 Call</a>
+<a class="whatsapp" href="https://wa.me/17788962403">💬 WhatsApp</a>
 
 </body>
 </html>
