@@ -8,26 +8,7 @@
 
   <meta name="description" content="Professional painting contractors in Vancouver. Interior & exterior painting for homes & businesses. Free estimates. High-quality finishes.">
 
-  <meta name="keywords" content="Vancouver painter, painting contractor Vancouver, interior painting, exterior painting, West Coast Painting Vancouver">
-
-  <!-- SAFE LocalBusiness Schema (correct placement) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "West Coast Painting Vancouver",
-    "url": "https://jawal2026.github.io/westcoast-painting-vancouver/",
-    "telephone": "778-896-2403",
-    "email": "westcoastpaintingvancouver@gmail.com",
-    "areaServed": "Vancouver, BC, Canada",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Vancouver",
-      "addressRegion": "BC",
-      "addressCountry": "CA"
-    }
-  }
-  </script>
+  <meta name="keywords" content="Vancouver painter, painting contractor Vancouver, interior painting, exterior painting">
 
   <style>
     body {
@@ -105,6 +86,14 @@
       border-radius: 10px;
     }
 
+    .contact-box {
+      background: #0f3d5e;
+      color: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
@@ -112,6 +101,19 @@
       color: white;
       margin-top: 20px;
     }
+
+    .call, .whatsapp {
+      position: fixed;
+      right: 20px;
+      padding: 14px 18px;
+      border-radius: 50px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .call { bottom: 20px; background: #28a745; }
+    .whatsapp { bottom: 90px; background: #25D366; }
   </style>
 </head>
 
@@ -119,41 +121,82 @@
 
 <header>
   <div class="topbar">
-    <strong>West Coast Painting Vancouver</strong>
+    <div class="logo">
+      <img src="logo.png" style="height:60px;">
+      <strong>West Coast Painting</strong>
+    </div>
 
     <nav>
       <a href="#home">Home</a>
       <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
 
+<!-- HERO -->
 <section class="hero" id="home">
   <h1>West Coast Painting Vancouver</h1>
-  <p>Interior & Exterior Painting • Reliable • High Quality</p>
+  <p>Interior & Exterior Painting • Clean • Reliable • High Quality</p>
   <a class="btn" href="#contact">Get Free Estimate</a>
 </section>
 
+<!-- SERVICES -->
 <section class="section" id="services">
   <h2>Our Services</h2>
   <div class="grid">
     <div class="card">Interior Painting</div>
     <div class="card">Exterior Painting</div>
-    <div class="card">Residential</div>
-    <div class="card">Commercial</div>
+    <div class="card">Residential Homes</div>
+    <div class="card">Commercial Buildings</div>
+    <div class="card">Drywall Repairs</div>
+    <div class="card">Deck & Fence Painting</div>
   </div>
 </section>
 
+<!-- ⭐ REVIEWS (ELFSIGHT - REAL AUTOMATIC GOOGLE REVIEWS) -->
+<section class="section">
+  <h2>Customer Reviews</h2>
+
+  <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+  <script src="https://elfsightcdn.com/platform.js" async></script>
+  <div class="elfsight-app-66e807cc-7e1b-4b8d-a25c-68d6db1b332b" data-elfsight-app-lazy></div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <h2>Recent Projects</h2>
+  <div class="grid">
+    <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952" style="width:100%;border-radius:10px;">
+    <img src="https://images.unsplash.com/photo-1562259949-e8e7689d7828" style="width:100%;border-radius:10px;">
+    <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85" style="width:100%;border-radius:10px;">
+  </div>
+</section>
+
+<!-- CONTACT -->
 <section class="section" id="contact">
-  <h2>Contact</h2>
-  <p>778-896-2403</p>
-  <p>westcoastpaintingvancouver@gmail.com</p>
+  <h2>Get Your Free Quote</h2>
+
+  <form action="https://formsubmit.co/westcoastpaintingvancouver@gmail.com" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required style="width:100%;padding:10px;margin:5px 0;">
+    <input type="tel" name="phone" placeholder="Phone Number" required style="width:100%;padding:10px;margin:5px 0;">
+    <textarea name="message" placeholder="Your project..." required style="width:100%;padding:10px;margin:5px 0;height:100px;"></textarea>
+    <button type="submit" class="btn">Get Free Quote</button>
+  </form>
+
+  <div class="contact-box">
+    <p>778-896-2403</p>
+    <p>westcoastpaintingvancouver@gmail.com</p>
+  </div>
 </section>
 
 <footer>
   © 2026 West Coast Painting Vancouver
 </footer>
+
+<a class="call" href="tel:7788962403">📞 Call</a>
+<a class="whatsapp" href="https://wa.me/17788962403">💬 WhatsApp</a>
 
 </body>
 </html>
