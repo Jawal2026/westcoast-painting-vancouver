@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +10,15 @@
 
   <meta name="keywords" content="Vancouver painter, painting contractor Vancouver, interior painting, exterior painting, West Coast Painting Vancouver">
 
-  <!-- ⭐ LOCAL BUSINESS SCHEMA (IMPORTANT FOR GOOGLE WIDGET / KNOWLEDGE PANEL) -->
+  <!-- SAFE LocalBusiness Schema (correct placement) -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "West Coast Painting Vancouver",
-    "image": "https://jawal2026.github.io/westcoast-painting-vancouver/logo.png",
     "url": "https://jawal2026.github.io/westcoast-painting-vancouver/",
     "telephone": "778-896-2403",
     "email": "westcoastpaintingvancouver@gmail.com",
-    "description": "Professional interior and exterior painting services in Vancouver, BC.",
     "areaServed": "Vancouver, BC, Canada",
     "address": {
       "@type": "PostalAddress",
@@ -105,14 +105,6 @@
       border-radius: 10px;
     }
 
-    .contact-box {
-      background: #0f3d5e;
-      color: white;
-      padding: 30px;
-      border-radius: 10px;
-      text-align: center;
-    }
-
     footer {
       text-align: center;
       padding: 20px;
@@ -120,18 +112,48 @@
       color: white;
       margin-top: 20px;
     }
-
-    .call, .whatsapp {
-      position: fixed;
-      right: 20px;
-      padding: 14px 18px;
-      border-radius: 50px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .call { bottom: 20px; background: #28a745; }
-    .whatsapp { bottom: 90px; background: #25D366; }
   </style>
 </head>
+
+<body>
+
+<header>
+  <div class="topbar">
+    <strong>West Coast Painting Vancouver</strong>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <h1>West Coast Painting Vancouver</h1>
+  <p>Interior & Exterior Painting • Reliable • High Quality</p>
+  <a class="btn" href="#contact">Get Free Estimate</a>
+</section>
+
+<section class="section" id="services">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">Interior Painting</div>
+    <div class="card">Exterior Painting</div>
+    <div class="card">Residential</div>
+    <div class="card">Commercial</div>
+  </div>
+</section>
+
+<section class="section" id="contact">
+  <h2>Contact</h2>
+  <p>778-896-2403</p>
+  <p>westcoastpaintingvancouver@gmail.com</p>
+</section>
+
+<footer>
+  © 2026 West Coast Painting Vancouver
+</footer>
+
+</body>
+</html>
