@@ -72,7 +72,7 @@
       padding: 120px 20px;
     }
 
-    .hero h1 { font-size: 40px; margin-bottom: 10px; }
+    .hero h1 { font-size: 40px; }
     .hero p { font-size: 18px; }
 
     .btn {
@@ -103,28 +103,19 @@
     }
 
     .service-card {
-      background: linear-gradient(145deg, #ffffff, #f0f4f8);
+      background: #f0f4f8;
       padding: 25px;
       border-radius: 15px;
       text-align: center;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-      transition: 0.3s ease;
-      border: 1px solid #e6e6e6;
+      transition: 0.3s;
     }
 
     .service-card:hover {
       transform: translateY(-8px);
-      background: linear-gradient(145deg, #0f3d5e, #1b5f8a);
+      background: #0f3d5e;
       color: white;
-      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
     }
 
-    .icon {
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    /* FIXED GALLERY */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -135,7 +126,6 @@
     .gallery img {
       width: 100%;
       border-radius: 10px;
-      object-fit: cover;
     }
 
     .pricing {
@@ -172,7 +162,6 @@
 
 <header>
   <div class="topbar">
-
     <div class="logo">
       <img src="logo.png" alt="logo">
       <strong>West Coast Painting</strong>
@@ -185,7 +174,6 @@
       <a href="#pricing">Pricing</a>
       <a href="#contact">Contact</a>
     </nav>
-
   </div>
 </header>
 
@@ -201,43 +189,12 @@
   <h2>Our Services</h2>
 
   <div class="service-grid">
-
-    <div class="service-card">
-      <div class="icon">🏠</div>
-      <h3>Interior Painting</h3>
-      <p>Clean, modern interior finishes for homes and condos.</p>
-    </div>
-
-    <div class="service-card">
-      <div class="icon">🏢</div>
-      <h3>Exterior Painting</h3>
-      <p>Durable exterior protection for Vancouver weather.</p>
-    </div>
-
-    <div class="service-card">
-      <div class="icon">🏡</div>
-      <h3>Residential</h3>
-      <p>Full house painting with professional prep work.</p>
-    </div>
-
-    <div class="service-card">
-      <div class="icon">🏬</div>
-      <h3>Commercial</h3>
-      <p>Offices, shops, and business painting services.</p>
-    </div>
-
-    <div class="service-card">
-      <div class="icon">🧱</div>
-      <h3>Drywall Repair</h3>
-      <p>Wall repairs before painting for perfect finish.</p>
-    </div>
-
-    <div class="service-card">
-      <div class="icon">🪵</div>
-      <h3>Deck & Fence</h3>
-      <p>Staining and painting for outdoor wood protection.</p>
-    </div>
-
+    <div class="service-card">🏠 Interior Painting</div>
+    <div class="service-card">🏢 Exterior Painting</div>
+    <div class="service-card">🏡 Residential</div>
+    <div class="service-card">🏬 Commercial</div>
+    <div class="service-card">🧱 Drywall Repair</div>
+    <div class="service-card">🪵 Deck & Fence</div>
   </div>
 </section>
 
@@ -246,22 +203,19 @@
   <h2>Recent Projects</h2>
 
   <div class="gallery">
-    <img src="interior/interior1.jpg" alt="Interior painting near window" loading="lazy">
-    <img src="interior/interior2.jpg" alt="Ceiling and pot lights painting" loading="lazy">
-    <img src="interior/interior3.jpg" alt="Staircase painting project" loading="lazy">
+    <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471" alt="Before painting">
+    <img src="https://images.unsplash.com/photo-1560185127-6ed189bf02f4" alt="After painting">
+    <img src="https://images.unsplash.com/photo-1583845112239-97ef1341b271" alt="Exterior before">
+    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c" alt="Exterior after">
   </div>
 </section>
 
 <!-- PRICING -->
 <section class="section" id="pricing">
   <h2>Labour Estimate</h2>
-
   <div class="pricing">
-    <p><b>Interior:</b> $2.00 – $3.50 per sq ft</p>
-    <p><b>Exterior:</b> $2.50 – $4.50 per sq ft</p>
-    <p><b>Small Rooms:</b> $300 – $800 labour</p>
-    <p><b>Full House:</b> $3,000 – $8,000 labour</p>
-    <p><b>Deck/Fence:</b> $500 – $2,500 labour</p>
+    <p><b>Interior:</b> $2.00 – $3.50 / sq ft</p>
+    <p><b>Exterior:</b> $2.50 – $4.50 / sq ft</p>
   </div>
 </section>
 
