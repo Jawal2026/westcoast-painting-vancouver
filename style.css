@@ -14,13 +14,24 @@ header {
   text-align: center;
 }
 
+header img {
+  height: 60px;
+  display: block;
+  margin: 0 auto 10px auto;
+}
+
+nav {
+  margin-top: 10px;
+}
+
 nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
+  font-weight: bold;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   background: #2e6da4;
   color: white;
@@ -28,7 +39,7 @@ nav a {
   text-align: center;
 }
 
-/* CONTENT SECTION */
+/* CONTENT */
 .content {
   padding: 20px;
   background: white;
@@ -45,9 +56,11 @@ nav a {
 
 .gallery h3 {
   grid-column: 1 / -1;
+  text-align: center;
   margin-bottom: 10px;
 }
 
+/* IMAGES */
 .gallery img {
   width: 100%;
   height: 220px;
