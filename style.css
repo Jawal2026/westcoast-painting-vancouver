@@ -13,27 +13,12 @@ header {
   text-align: center;
 }
 
-/* Top navigation layout */
-.topbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 20px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
 nav a {
   color: white;
   margin: 0 10px;
   text-decoration: none;
 }
 
-/* Hero section */
 .hero {
   background: #2e6da4;
   color: white;
@@ -46,7 +31,6 @@ nav a {
   background: white;
 }
 
-/* Footer */
 footer {
   text-align: center;
   padding: 10px;

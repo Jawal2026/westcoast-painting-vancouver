@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>West Coast Painting</title>
+</head>
+<body style="font-family:Arial;text-align:center;padding:40px;">
+
+<h1>West Coast Painting</h1>
+<p>Professional Interior & Exterior Painting</p>
+
+<a href="tel:7788962403">Call Now: 778-896-2403</a>
+
+<h2>Services</h2>
+<p>Interior • Exterior • Commercial Painting</p>
+
+<h2>Serving the Lower Mainland</h2>
+
+</body>
+</html>
