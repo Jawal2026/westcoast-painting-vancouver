@@ -37,4 +37,21 @@ footer {
   background: #1f4e79;
   color: white;
   margin-top: 20px;
+}/* GALLERY SECTION */
+.gallery {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.gallery h3 {
+  margin-bottom: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
 }
