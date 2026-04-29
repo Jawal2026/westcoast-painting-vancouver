@@ -1,22 +1,202 @@
-<section class="hero">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>West Coast Painting Vancouver</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-  <div class="hero-overlay">
+    body {
+      background: #f5f5f5;
+      color: #333;
+    }
 
-    <img src="logo.png" class="hero-logo" alt="Logo">
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
 
-    <h2>West Coast Painting Vancouver</h2>
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: bold;
+      font-size: 18px;
+    }
 
-    <p>Interior & Exterior Painting Experts</p>
+    .logo img {
+      width: 45px;
+      height: 45px;
+      object-fit: contain;
+    }
 
-    <p class="hero-sub">
-      Vancouver • Burnaby • North Shore • Richmond
-    </p>
+    nav a {
+      margin-left: 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
 
-    <div class="hero-buttons">
-      <a href="services.html" class="primary-btn">View Services</a>
-      <a href="tel:17788962403" class="secondary-btn">Call Now</a>
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 75vh;
+      overflow: hidden;
+    }
+
+    .hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(65%);
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      padding: 20px;
+      max-width: 900px;
+    }
+
+    .hero-text h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    .btn-primary {
+      background: #0077cc;
+      color: white;
+    }
+
+    .btn-secondary {
+      background: white;
+      color: #0077cc;
+      border: 2px solid #0077cc;
+    }
+
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+      background: white;
+    }
+
+    .section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Logo">
+      West Coast Painting Vancouver
     </div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  </div>
+  <section class="hero">
+    <img src="hero.jpg" alt="Vancouver West Coast View">
 
-</section>
+    <div class="hero-text">
+      <h1>West Coast Painting Vancouver</h1>
+      <p>Interior & Exterior Painting Experts</p>
+      <p>Vancouver • Burnaby • North Shore • Richmond</p>
+
+      <div class="buttons">
+        <button class="btn btn-primary">View Services</button>
+        <button class="btn btn-secondary">Call Now</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">Interior Painting</div>
+      <div class="card">Exterior Painting</div>
+      <div class="card">Residential Painting</div>
+      <div class="card">Commercial Painting</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2>Recent Projects</h2>
+    <p>Gallery coming soon...</p>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>Call or message for a free estimate</p>
+  </section>
+
+  <footer>
+    &copy; 2026 West Coast Painting Vancouver. All rights reserved.
+  </footer>
+
+</body>
+</html>
