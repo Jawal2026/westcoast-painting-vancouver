@@ -1,30 +1,302 @@
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
-              url('vancouver.jpg');
-  background-size: cover;
-  background-position: center;
-  color: white;
-  text-align: center;
-  padding: 110px 20px;
+# CLEAN WEBSITE (FINAL VERSION)
+
+Below is your complete, cleaned, and professional setup.
+It includes:
+
+* index.html
+* style.css
+* working navigation
+* working buttons
+* full gallery section
+* improved logo size
+* SEO-friendly structure
+
+---
+
+# ✅ 1. index.html
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>West Coast Painting Vancouver | Interior & Exterior Painting</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="logo">
+    <img src="logo.png" alt="West Coast Painting Vancouver Logo">
+    <span>West Coast Painting Vancouver</span>
+  </div>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <img src="hero.jpg" alt="Vancouver West Coast View">
+
+  <div class="hero-text">
+    <h1>Professional Painting Services</h1>
+    <p>Interior & Exterior Experts in Vancouver</p>
+    <p>Vancouver • Burnaby • North Shore • Richmond</p>
+
+    <div class="buttons">
+      <a href="#services" class="btn primary">View Services</a>
+      <a href="tel:+1234567890" class="btn secondary">Call Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <h2>Our Services</h2>
+  <div class="grid">
+    <div class="card">Interior Painting</div>
+    <div class="card">Exterior Painting</div>
+    <div class="card">Residential Painting</div>
+    <div class="card">Commercial Painting</div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <h2>Recent Projects</h2>
+
+  <div class="gallery">
+    <img src="interior1.jpg" alt="Interior Painting 1">
+    <img src="interior2.jpg" alt="Interior Painting 2">
+    <img src="interior3.jpg" alt="Interior Painting 3">
+    <img src="exterior1.jpg" alt="Exterior Painting 1">
+    <img src="exterior2.jpg" alt="Exterior Painting 2">
+    <img src="exterior3.jpg" alt="Exterior Painting 3">
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <h2>Contact Us</h2>
+  <p>Call or message for a free estimate today</p>
+  <a href="tel:+1234567890" class="btn primary">Call Now</a>
+</section>
+
+<footer>
+  <p>© 2026 West Coast Painting Vancouver. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+```
+
+---
+
+# 🎨 2. style.css
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-.hero-logo {
-  width: 60px;
+body {
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+}
+
+nav a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(60%);
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 44px;
   margin-bottom: 10px;
 }
 
-.hero h2 {
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.btn {
+  padding: 12px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.primary {
+  background: #0077cc;
+  color: white;
+}
+
+.secondary {
+  background: white;
+  color: #0077cc;
+  border: 2px solid #0077cc;
+}
+
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+  background: white;
+  margin-top: 10px;
+}
+
+.section h2 {
+  margin-bottom: 30px;
   font-size: 28px;
-  margin: 10px 0;
 }
 
-.hero p {
-  font-size: 15px;
-  margin: 5px 0;
+/* SERVICES */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
-.hero-sub {
-  font-size: 13px;
-  opacity: 0.85;
-  margin-top: 8px;
+.card {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 10px;
+  font-weight: bold;
 }
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+}
+```
+
+---
+
+# 🚀 IMPORTANT (FINAL CHECKLIST)
+
+Make sure your repository has:
+
+```
+index.html
+style.css
+logo.png
+hero.jpg
+interior1.jpg
+interior2.jpg
+interior3.jpg
+exterior1.jpg
+exterior2.jpg
+exterior3.jpg
+```
+
+---
+
+# 🔥 RESULT
+
+You now have:
+
+* Professional website layout
+* Working buttons
+* Proper navigation
+* Full gallery system
+* Correct logo size
+* SEO structure
+
+---
+
+If you want next upgrade tomorrow:
+👉 Google ranking (SEO boost)
+👉 Contact form
+👉 WhatsApp button
+👉 Booking system
+
+Just tell me 👍
