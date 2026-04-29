@@ -1,103 +1,60 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f4f4f4;
-  color: #333;
-}
-
-/* HEADER */
-header {
-  background: #1f4e79;
-  color: white;
-  padding: 20px;
+.services-hero {
   text-align: center;
-}
-
-header img {
-  height: 60px;
-  display: block;
-  margin: 0 auto 10px auto;
-}
-
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-/* HERO */
-.hero {
+  padding: 30px 15px;
   background: #2e6da4;
   color: white;
-  padding: 40px;
-  text-align: center;
 }
 
-/* CONTENT */
-.content {
-  padding: 20px;
-  background: white;
-}
-
-/* GALLERY (IMPORTANT FIX) */
-.gallery {
-  padding: 30px;
-  background: white;
+.services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  padding: 20px;
+  background: #f4f4f4;
 }
 
-.gallery h3 {
-  grid-column: 1 / -1;
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-/* IMAGES */
-.gallery img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+.service-card {
+  background: white;
   border-radius: 10px;
-  display: block;
-  background: #eee;
-  transition: transform 0.2s ease;
-}
-
-.gallery img:hover {
-  transform: scale(1.03);
-}
-
-/* LISTS (SERVICES) */
-ul {
-  padding-left: 20px;
-}
-
-/* FOOTER */
-footer {
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   text-align: center;
-  padding: 10px;
-  background: #1f4e79;
-  color: white;
-  margin-top: 20px;
+  transition: 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
-.sticky-call {
-  position: fixed;
-  bottom: 15px;
-  right: 15px;
+
+.service-card:hover {
+  transform: translateY(-4px);
+}
+
+/* 🔥 SMALLER IMAGE (THIS FIXES YOUR ISSUE) */
+.service-card img {
+  width: 100%;
+  height: 100px;   /* SMALL + CLEAN */
+  object-fit: cover;
+}
+
+/* TITLE */
+.service-card h3 {
+  margin: 10px 0;
+  font-size: 15px;
+  color: #1f4e79;
+}
+
+/* BUTTON FIX (VISIBLE NOW) */
+.service-btn {
+  display: block;
+  margin: 10px auto 14px;
+  padding: 8px 12px;
   background: #28a745;
   color: white;
-  padding: 12px 16px;
-  border-radius: 50px;
   text-decoration: none;
-  font-weight: bold;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  z-index: 999;
+  border-radius: 5px;
+  font-size: 13px;
+  width: 80%;
+}
+
+.service-btn:hover {
+  background: #218838;
 }
